@@ -1,0 +1,26 @@
+header {
+    grid-area: header;
+    background-color: $bg-dark-opacity;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    head {
+        padding: 10px 0px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        width: 35%;
+        margin: 10px;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+footer {
+    grid-area: footer;
+    background-color: $bg-dark-opacity;
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    li {
+        list-style: none;
+        margin: 0px 20px;
+        img {
+            width: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        gap: 15px;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+    }
+}

@@ -1,0 +1,12 @@
+.cover-game-image {
+    margin: 10px 0px 35px 0px;
+    img{
+        width:700px;
+    }    
+}
+@media screen and (max-width: 768px) {
+    .cover-game-image {
+        width: 80%;
+        margin: 0px auto;
+    }
+}
