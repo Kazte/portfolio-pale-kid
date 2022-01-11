@@ -1,0 +1,61 @@
+@mixin article($align) {
+    width: 55%;
+    margin: 20px auto;
+    overflow: hidden;
+
+    @if $align == center {
+        img {
+            display: block;
+            width: 66%;
+            margin: 25px auto;
+        }
+    } @else {
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            float: $align;
+            margin: 25px;
+            width: 35%;
+            // height: 50%;
+        }
+    }
+}
+
+.article-center {
+    @include article(center);
+}
+
+.article-right {
+    @include article(right);
+}
+
+.article-left {
+    @include article(left);
+}
+
+@media screen and (max-width: 768px) {
+    .article-center {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .article-right {
+        width: 80%;
+        margin: 0px auto;
+        img {
+            float: none;
+            width: 100%;
+            margin: 0px 0px;
+        }
+    }
+    .article-left {
+        width: 80%;
+        margin: 0px auto;
+        img {
+            float: none;
+            width: 100%;
+            margin: 0px 0px;
+        }
+    }
+}

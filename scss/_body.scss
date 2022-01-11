@@ -18,7 +18,6 @@ body {
     grid-template-areas: "header" "main" "footer";
 }
 
-
 /* General */
 
 h1 {
@@ -40,6 +39,7 @@ p {
 
 main {
     grid-area: main;
+
     margin: 10px;
     animation: fade-in 0.5s;
 }
@@ -53,42 +53,11 @@ main {
     }
 }
 
-.article-center {
-    width: 55%;
-    margin: 0px auto;
-    padding: 25px 0px;
-}
-
-.article-right {
-    width: 55%;
-    margin: 0px auto;
-    padding: 25px 0px;
-    img {
-        float: left;
-        margin: 0px 25px;
-    }
-}
-
-.article-left {
-    width: 55%;
-    margin: 0px auto;
-    padding: 25px 0px;
-    img {
-        float: right;
-        margin: 0px 25px;
-    }
-}
-
-.article-image {
-    width: 350px;
-    margin: 10px;
-}
-
 .flex-column-center {
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .flex-row {
@@ -130,18 +99,24 @@ main {
 }
 
 .text-justify {
-    text-align: justify;
+    text-align: left;
 }
 
 .text-center {
     text-align: center;
 }
 
+.bottom-line {
+    padding: 25px 0px;
+    border-bottom: 1px inset $white-color;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 @media screen and (max-width: 768px) {
-    .article-center {
-        width: 80%;
-        margin: 0px auto;
-    }
     h1 {
         font-size: 2.5em;
     }
@@ -153,23 +128,5 @@ main {
     }
     .text-justify {
         text-align: center;
-    }
-    .article-right {
-        width: 80%;
-        margin: 0px auto;
-        img {
-            float: none;
-            width: 100%;
-            margin: 0px 0px;
-        }
-    }
-    .article-left {
-        width: 80%;
-        margin: 0px auto;
-        img {
-            float: none;
-            width: 100%;
-            margin: 0px 0px;
-        }
     }
 }
