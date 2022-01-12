@@ -6,8 +6,8 @@
     @if $align == center {
         img {
             display: block;
-            width: 66%;
             margin: 25px auto;
+            width: 65%;
         }
     } @else {
         h2 {
@@ -18,7 +18,6 @@
             float: $align;
             margin: 25px;
             width: 35%;
-            // height: 50%;
         }
     }
 }
@@ -36,26 +35,26 @@
 }
 
 @media screen and (max-width: 768px) {
+    @mixin article($align) {
+        width: 80%;
+        margin: 0px auto;
+        overflow: hidden;
+
+        img {
+            float: none;
+            width: 100%;
+            margin: 0px 0px;
+        }
+    }
     .article-center {
-        width: 80%;
-        margin: 0px auto;
+        @include article(center);
     }
+
     .article-right {
-        width: 80%;
-        margin: 0px auto;
-        img {
-            float: none;
-            width: 100%;
-            margin: 0px 0px;
-        }
+        @include article(right);
     }
+
     .article-left {
-        width: 80%;
-        margin: 0px auto;
-        img {
-            float: none;
-            width: 100%;
-            margin: 0px 0px;
-        }
+        @include article(left);
     }
 }

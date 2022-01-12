@@ -27,7 +27,7 @@ h2 {
   padding: 30px 10px 20px 10px; }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.7em;
   margin: 30px 10px 20px 10px; }
 
 main {
@@ -96,7 +96,7 @@ img {
   h2 {
     font-size: 2em; }
   p {
-    font-size: 1.3em; }
+    font-size: 1.5em; }
   .text-justify {
     text-align: center; } }
 
@@ -106,7 +106,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   align-items: center; }
-  header head {
+  header .head {
     padding: 10px 0px;
     display: flex;
     flex-flow: row wrap;
@@ -116,11 +116,10 @@ header {
 @media screen and (max-width: 768px) {
   .head {
     width: 35%;
-    margin: 10px; }
-    .head img {
-      max-width: 100%;
-      height: auto;
-      display: inline-block; } }
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; } }
 
 .nav-checkbox {
   display: none; }
@@ -287,8 +286,8 @@ footer {
   overflow: hidden; }
   .article-center img {
     display: block;
-    width: 66%;
-    margin: 25px auto; }
+    margin: 25px auto;
+    width: 65%; }
 
 .article-right {
   width: 55%;
@@ -315,17 +314,24 @@ footer {
 @media screen and (max-width: 768px) {
   .article-center {
     width: 80%;
-    margin: 0px auto; }
+    margin: 0px auto;
+    overflow: hidden; }
+    .article-center img {
+      float: none;
+      width: 100%;
+      margin: 0px 0px; }
   .article-right {
     width: 80%;
-    margin: 0px auto; }
+    margin: 0px auto;
+    overflow: hidden; }
     .article-right img {
       float: none;
       width: 100%;
       margin: 0px 0px; }
   .article-left {
     width: 80%;
-    margin: 0px auto; }
+    margin: 0px auto;
+    overflow: hidden; }
     .article-left img {
       float: none;
       width: 100%;
