@@ -3,10 +3,7 @@
 }
 
 .nav-toggle {
-    .close-nav {
-        display: none;
-    }
-    .open-nav {
+    svg{
         display: none;
     }
 }
@@ -34,12 +31,12 @@
             font-size: 1rem;
         }
     }
+
     .nav-toggle {
         position: absolute;
         cursor: pointer;
         right: 0;
-        img {
-            width: 3rem;
+        svg {
             background-color: $bg-dark-opacity;
             border-radius: 5px;
             position: fixed;
@@ -62,7 +59,7 @@
         opacity: 0%;
         transition: opacity 0.2s ease;
     }
-    .nav-checkbox:checked~.nav-menu {
+    .nav-checkbox:checked ~ .nav-menu {
         position: fixed;
         left: 0;
         top: 0;
@@ -81,7 +78,7 @@
             }
         }
     }
-    .nav-checkbox:checked~label.nav-toggle {
+    .nav-checkbox:checked ~ label.nav-toggle {
         .close-nav {
             display: block;
         }
