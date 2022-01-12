@@ -10,6 +10,8 @@
     text-transform: uppercase;
     text-align: center;
     transition: color 0.2s, background-color 0.2s;
+    font-family: "Changa", sans-serif;
+    font-weight: 500;
     &:hover {
         color: $white-color;
         background-color: $bg-dark;
