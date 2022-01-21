@@ -110,6 +110,10 @@ main {
     border-bottom: 1px inset $white-color;
 }
 
+.card {
+    width: 65%;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -127,5 +131,8 @@ img {
     }
     .text-justify {
         text-align: center;
+    }
+    .card {
+        width: 95%;
     }
 }

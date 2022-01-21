@@ -3,7 +3,7 @@
 }
 
 .nav-toggle {
-    svg{
+    svg {
         display: none;
     }
 }
@@ -11,6 +11,8 @@
 .menu {
     font-size: 32px;
     padding: 10px 0;
+    // Z-INDEX de 1090 para estar encima de cualquier componente de Bootstrap.
+    z-index: 1090;
     list-style: none;
     li {
         display: inline-block;

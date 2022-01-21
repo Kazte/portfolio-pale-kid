@@ -86,6 +86,9 @@ main {
   padding: 25px 0px;
   border-bottom: 1px inset #f5f5f5; }
 
+.card {
+  width: 65%; }
+
 img {
   max-width: 100%;
   max-height: 100%; }
@@ -98,7 +101,9 @@ img {
   p {
     font-size: 1.5em; }
   .text-justify {
-    text-align: center; } }
+    text-align: center; }
+  .card {
+    width: 95%; } }
 
 header {
   grid-area: header;
@@ -130,6 +135,7 @@ header {
 .menu {
   font-size: 32px;
   padding: 10px 0;
+  z-index: 1090;
   list-style: none; }
   .menu li {
     display: inline-block;
