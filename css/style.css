@@ -126,9 +126,6 @@ header {
     justify-content: center;
     align-items: center; } }
 
-nav * {
-  all: unset; }
-
 .nav-checkbox {
   display: none; }
 
